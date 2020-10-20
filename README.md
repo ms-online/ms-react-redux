@@ -1,1 +1,1 @@
-lesson-1:React 介绍及工作原理
+lesson-2:React 环境配置及插件介绍

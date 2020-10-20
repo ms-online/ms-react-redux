@@ -23,6 +23,17 @@
           name: 'Summer',
           age: 25,
         };
+        // 函数
+        handleClick(e) {
+          //   console.log(e.target);
+          console.log(this.state);
+        }
+        handleMouserOver(e) {
+          console.log(e.target, e.pageX);
+        }
+        handleCopy(e) {
+          console.log('作者为米修在线，复制请标注出处！');
+        }
         render() {
           return (
             <div className="app-content">
@@ -30,6 +41,9 @@
               <p>
                 我的名字叫：{this.state.name}, 我今年：{this.state.age}岁。
               </p>
+              <button onClick={this.handleClick}>点击</button>
+              <button onMouseOver={this.handleMouserOver}>悬停</button>
+              <p onCopy={this.handleCopy}>学习编程，改变生活！</p>
             </div>
           );
         }

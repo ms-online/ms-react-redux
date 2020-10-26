@@ -12,7 +12,7 @@
       crossorigin
       src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
     ></script>
-    <title>React 环境</title>
+    <title>React</title>
   </head>
   <body>
     <div id="app"></div>
@@ -23,32 +23,12 @@
           name: 'Summer',
           age: 25,
         };
-        // 函数
-        handleClick = (e) => {
-          //   console.log(e.target);
-          // this.state.name = 'Lucy'; 错误演示
-          this.setState({
-            name: 'Lucy',
-            age: 30,
-          });
-          console.log(this.state);
-        };
-        handleMouserOver = (e) => {
-          console.log(e.target, e.pageX);
-        };
-        handleCopy = (e) => {
-          console.log('作者为米修在线，复制请标注出处！');
-        };
         render() {
           return (
             <div className="app-content">
-              <h1>欢迎来到米修在线！</h1>
-              <p>
+              <h1>
                 我的名字叫：{this.state.name}, 我今年：{this.state.age}岁。
-              </p>
-              <button onClick={this.handleClick}>点击</button>
-              <button onMouseOver={this.handleMouserOver}>悬停</button>
-              <p onCopy={this.handleCopy}>学习编程，改变生活！</p>
+              </h1>
             </div>
           );
         }

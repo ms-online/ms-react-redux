@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 import Contact from './Contact'
+import AddContact from './AddContact'
 
 class App extends Component {
   state = {
@@ -15,7 +16,8 @@ class App extends Component {
       <header className="App-header">
        <h1>这是我的第一个React应用程序！</h1>
       </header>
-      <Contact contactForm={this.state.contactForm}/>
+        <Contact contactForm={this.state.contactForm} />
+        <AddContact />6
     </div>
   );
   }

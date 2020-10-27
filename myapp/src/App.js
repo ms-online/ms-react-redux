@@ -6,7 +6,8 @@ function App() {
       <header className="App-header">
        <h1>这是我的第一个React应用程序！</h1>
       </header>
-      <Contact />
+      <Contact name = "Henry" age="32" sex = "male"/>
+      <Contact name = "Lucy" age="30" sex = "Female"/>
     </div>
   );
 }

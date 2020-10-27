@@ -2,11 +2,13 @@ import React, { Component } from 'react';
 
 class Contact extends Component {
     render() {
+        // console.log(this.props)
+        const { name, age, sex} = this.props
         return (
             <div className="ContactFrom">
-                <div>Name: Summer</div>
-                <div>Age:25</div>
-                <div>Sex:Female</div>
+                <div>{ name }</div>
+                <div>{ age }</div>
+                <div>{ sex }</div>
             </div>
         )
     }

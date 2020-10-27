@@ -1,1 +1,1 @@
-lesson-12:props 属性传值
+lesson-13:组件属性传值——输出列表

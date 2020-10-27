@@ -2,13 +2,20 @@ import React, { Component } from 'react';
 
 class Contact extends Component {
     render() {
-        // console.log(this.props)
-        const { name, age, sex} = this.props
+        const { contactForm } = this.props;
+        const formList = contactForm.map(contact => {
+            return (
+                <div className="ContactFrom" key = {contact.id}>
+                <div>{ contact.name }</div>
+                <div>{ contact.age }</div>
+                <div>{ contact.sex }</div>
+            </div>
+            )
+        })
+        // console.log(contactForm);
         return (
-            <div className="ContactFrom">
-                <div>{ name }</div>
-                <div>{ age }</div>
-                <div>{ sex }</div>
+            <div className="formList">
+                { formList }
             </div>
         )
     }

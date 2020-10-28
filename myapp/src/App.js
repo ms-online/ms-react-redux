@@ -10,6 +10,15 @@ class App extends Component {
       {name:'Henry', age:32, sex:'Male', id:3},
     ]
   }
+
+  addContact = (contact) => {
+    // console.log(contact);
+    contact.id = Math.random();
+    let contactForm = [...this.state.contactForm, contact]
+    this.setState({
+      contactForm:contactForm
+    })
+  }
   render() {
     return (
     <div className="App">
@@ -17,7 +26,7 @@ class App extends Component {
        <h1>这是我的第一个React应用程序！</h1>
       </header>
         <Contact contactForm={this.state.contactForm} />
-        <AddContact />6
+        <AddContact addContact={this.addContact}/>
     </div>
   );
   }

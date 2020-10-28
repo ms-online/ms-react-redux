@@ -19,13 +19,24 @@ class App extends Component {
       contactForm:contactForm
     })
   }
+
+  deleteContact = (id) => {
+    // console.log(id);
+    let contactForm = this.state.contactForm.filter(contact => {
+      return contact.id !== id
+    })
+
+    this.setState({
+      contactForm:contactForm
+    })
+  }
   render() {
     return (
     <div className="App">
       <header className="App-header">
        <h1>这是我的第一个React应用程序！</h1>
       </header>
-        <Contact contactForm={this.state.contactForm} />
+        <Contact deleteContact={this.deleteContact} contactForm={this.state.contactForm} />
         <AddContact addContact={this.addContact}/>
     </div>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Contact = (props) => {
-    const { contactForm } = props;
+    const { contactForm, deleteContact } = props;
     // if条件语句
     const formList = contactForm.map(contact => {
         if (contact.age >= 30) {
@@ -9,7 +9,8 @@ const Contact = (props) => {
                 <div className="ContactFrom" key = {contact.id}>
                 <div>{ contact.name }</div>
                 <div>{ contact.age }</div>
-                <div>{ contact.sex }</div>
+                <div>{contact.sex}</div>
+                <button onClick={()=>deleteContact(contact.id)}>删除数据</button>
             </div>
             )
         } else {

@@ -30,6 +30,15 @@ class App extends Component {
       contactForm:contactForm
     })
   }
+  componentDidMount() {
+    console.log('挂载完成！')
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log('更新完成！')
+    console.log(prevProps);
+    console.log(prevState);
+  }
   render() {
     return (
     <div className="App">

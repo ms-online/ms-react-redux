@@ -1,1 +1,1 @@
-lesson-25:Link & NavLink
+lesson-26:编程式导航（重定向）

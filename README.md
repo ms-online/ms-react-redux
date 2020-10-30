@@ -1,1 +1,1 @@
-lesson-40:完善博客页面
+lesson-41:映射 dispatch 到 props

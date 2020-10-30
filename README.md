@@ -1,1 +1,1 @@
-lesson-38:在 react 中设置 redux
+lesson-39:映射 state 到 props

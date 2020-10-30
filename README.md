@@ -1,1 +1,1 @@
-lesson-32 导入图片
+lesson-38:在 react 中设置 redux

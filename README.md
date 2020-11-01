@@ -1,1 +1,1 @@
-lesson-41:映射 dispatch 到 props
+lesson-42:actions 生成器

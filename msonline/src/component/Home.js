@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import Pokeball from '../pokeball.png'
 import { connect } from 'react-redux'
+
 // import Rainbow from '../hoc/Rainbow'
 
 
